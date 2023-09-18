@@ -6,8 +6,6 @@ VBuy.in was the first hyperlocal marketplace then in 2015 in India
 # License
 Copyright (c) VS Online Services Pvt Ltd. All rights reserved. For the Native Android app for hyperlocal market place vbuy.in, we used a Web API version of vsEcommerce until 2020, so only certain API is compatible with vsEcommerce. For now, we don't intend to support any mobile app as open source. 
 
-Licensed under the VS Online Services Open Software License (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
-
-http://vsonlineservices.com/open-source-license
+Licensed under the GPL V3 license (the "License")
 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:alignmentMode="alignBounds"
+    android:background="@drawable/grid_border"
+    android:columnCount="1" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:textStyle="bold"
+        android:text="SORT BY"
+        
+        android:textSize="24dp"
+        android:textColor="#006600" />
+    
+    
+    
+     <View
+        android:id="@+id/view1"
+        android:layout_width="270dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_marginTop="5dp"
+        android:background="#006600" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingBottom="10dp" >
+
+           
+
+           
+
+            
+
+                <RelativeLayout
+                    android:id="@+id/storecount_row"
+                    android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                    android:layout_height="30dp" >
+                    <TextView
+                    android:id="@+id/store"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Store Count"
+                    android:textStyle="normal"
+                    android:textSize="22dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/storecount_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible"
+                    android:src="@android:drawable/checkbox_on_background" />
+
+                </RelativeLayout>
+           
+
+            <RelativeLayout
+                android:id="@+id/lowtohigh_row"
+                android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                android:layout_marginTop="15dp" >
+
+                <TextView
+                    android:id="@+id/ltoh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price--Low to High"
+                     android:textSize="22dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/lowtohigh_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@android:drawable/checkbox_on_background"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/hightolow_row"
+                android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                android:layout_marginTop="15dp" >
+
+                <TextView
+                    android:id="@+id/htol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price--High to Low    "
+                     android:textSize="22dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/hightolow_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@android:drawable/checkbox_on_background"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/atoz_row"
+                android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                android:layout_marginTop="15dp" >
+
+                <TextView
+                    android:id="@+id/atoz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A to Z"
+                     android:textSize="22dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/atoz_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@android:drawable/checkbox_on_background"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ztoa_row"
+                android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                android:layout_marginTop="15dp" >
+
+                <TextView
+                    android:id="@+id/ztoa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Z to A"
+                     android:textSize="22dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/ztoa_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@android:drawable/checkbox_on_background"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+        </TableLayout>
+    </LinearLayout>
+
+   
+
+</RelativeLayout>

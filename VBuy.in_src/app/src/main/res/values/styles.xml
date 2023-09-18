@@ -1,0 +1,90 @@
+<resources>
+
+   <style name="AppTheme" parent="AppTheme.Base">
+ 
+   </style>
+    
+     <style name="AppTheme.Base" parent="Theme.AppCompat.Light">
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">#0A0A0A</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+         <item name="colorPrimaryDark">#24211E</item>
+
+         <item name="windowNoTitle">true</item>
+         <item name="windowActionBar">false</item>
+        
+        <!-- colorAccent is used as the default value for colorControlActivated
+             which is used to tint widgets -->
+        <item name="colorAccent">#FFFFFF</item>
+
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">#FFFFFF</item>
+    </style>
+
+    
+    
+    
+    
+    
+    
+   
+    
+    
+    
+    
+    
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        
+    </style>
+
+    <!-- Application theme. -->
+    
+<style name="CustomProgressBar" parent="android:Widget.ProgressBar.Horizontal">
+		 <item name="android:indeterminateOnly">false</item>
+          <item name="android:progressDrawable">@drawable/custom_progress_bar_horizontal</item>
+          <item name="android:minHeight">10dip</item>
+          <item name="android:maxHeight">20dip</item>
+	</style>
+	
+	<style name="CustomSeekBar" parent="android:Widget.SeekBar">
+          <item name="android:progressDrawable">@drawable/custom_seek_bar</item>
+      	   <item name="android:thumb">@drawable/seek_bar_thumb</item>
+      	   <item name="android:thumbOffset">0dip</item>
+	</style>
+	
+	
+	<style name="CustomSeekBar1" parent="android:Widget.SeekBar">
+          <item name="android:progressDrawable">@drawable/custom_seek_bar1</item>
+          <item name="android:thumb">@drawable/seek_bar_thumb1</item>
+          <item name="android:thumbOffset">0dip</item>
+   </style>
+	
+	
+	<style name="CustomSeekBarprice" parent="android:Widget.SeekBar">
+          <item name="android:progressDrawable">@drawable/custom_seek_bar_price</item>
+      	   <item name="android:thumb">@drawable/seek_bar_thumb</item>
+      	   <item name="android:thumbOffset">0dip</item>
+	</style>
+	<style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+        
+    </style>
+    <style name="mydialogstyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

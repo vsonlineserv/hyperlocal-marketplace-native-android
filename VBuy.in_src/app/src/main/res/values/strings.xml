@@ -1,0 +1,91 @@
+<resources>
+
+    <string name="app_name">VBuy.in</string>
+    <string name="action_settings">Settings</string>
+    <item name="title_container" type="id"/>
+    <item name="title_logo" type="id"/>
+    <item name="title_text" type="id"/>
+    <item name="dialog_discard_confirm" type="id"/>
+    <item name="dialog_moderator" type="id"/>
+    <item name="dialog_wave" type="id"/>
+    <item name="blocks_ruler" type="id"/>
+    <item name="blocks_now" type="id"/>
+    
+    
+    <string-array name="india">
+        <item>Tamil Nadu</item>
+        <item>Kerala</item>
+        <item>Andhra Pradesh</item>
+        <item>Karnataka</item>
+        
+    </string-array>
+    
+    <string name="login">http://demo2.vbuy.in/token</string>
+    <string name="forgotpassword">http://demo2.vbuy.in/api/Login/ForgotPassword?username=</string>
+    <string name="addtowishlist">http://demo2.vbuy.in/api/UserAction/AddUserWishList/?productId=</string>
+    <string name="removewishlist">http://demo2.vbuy.in/api/UserAction/RemoveUserWishList/?productId=</string>
+    <string name="registeruser">http://demo2.vbuy.in/api/Login/RegisterUser</string>
+    <string name="addcart">http://demo2.vbuy.in/api/Cart/AddShoppingCartItemList/</string>
+    <string name="confirmorder">http://demo2.vbuy.in/api/CheckOut/CreateOrderForCart/</string>
+    <string name="deletecart">http://demo2.vbuy.in/api/Cart/RemoveShoppingCartItem/</string>
+    <string name="updatecart">http://demo2.vbuy.in/api/Cart/UpdateCartItemQuantity/</string>
+     <string name="getcart">http://demo2.vbuy.in/api/Cart/GetShoppingCartItems/?userName=</string>
+     <string name="addaddress">http://demo2.vbuy.in/api/Cart/AddBuyerAddress/</string>
+     <string name="getorder">http://demo2.vbuy.in/api/OrderTracking/GetTrackingOrders</string>
+     <string name="getorderdetails">http://demo2.vbuy.in/api/OrderTracking/GetProductList?OrderId=</string>
+     <string name="cancelorder">http://demo2.vbuy.in/api/OrderTracking/CancelOrders?OrderId=</string>
+     <string name="gettotalorder">http://demo2.vbuy.in/api/OrderTracking/GetOrdersList</string>
+     <string name="confirmorderlist">http://demo2.vbuy.in/api/CheckOut/GetOrderConfirmationDetails/?orderId=</string>
+     <string name="coupon">http://demo2.vbuy.in/api/CheckOut/GetCartDiscount/?couponCode=</string>
+    <string name="demo_min_label">Min</string>
+    <string name="demo_max_label">Max</string>
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">Successfully</string>
+    <string name="gcm_unregistered">unregistered</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+    <string name="options_clear">Clear</string>
+    <string name="options_exit">Exit</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+     <string name="rs">&#x20B9;</string>
+
+ <string name="str_rb_driving">Driving</string>
+    <string name="str_rb_walking">Walking</string>
+    <string name="bullet">\u2022</string>
+
+  <string name="todayoffers">http://demo2.vbuy.in/api/Products/GetTopOffers?</string>
+  <string name="featuredproduct">http://demo2.vbuy.in/api/Landing/GetFeaturedProducts</string>
+  <string name="GetTopOffers">http://demo2.vbuy.in/api/Products/GetTopOffers?</string>
+  <string name="product_description">http://demo2.vbuy.in/api/Products/GetProductSpecification/?id=</string>
+  <string name="search_pricerate">http://demo2.vbuy.in/api/Products/GetMinMaxForProductSearch/?search=</string>
+  <string  name="pricerate">http://demo2.vbuy.in/api/Products/GetMinMaxForProductCategory/?id=</string>
+   <string name="menu_settings">Settings</string>
+    <string name="categorys">http://demo2.vbuy.in/api/Landing/GetMainMenu</string>
+    <string name="subcategorys">http://demo2.vbuy.in/api/Landing/GetSubMenu/?categoryId=</string>
+   <string name="product">http://demo2.vbuy.in/api/Products/GetProducts_D/</string>
+    <string name="searchproduct">http://demo2.vbuy.in/api/Products/SearchCatalogue_N/</string>
+    <string name="Getwishlist">http://demo2.vbuy.in/api/Products/GetUserWishlistProducts/?lat=</string>
+    <string name="seller"> http://demo2.vbuy.in/api/Products/GetProductDetails/?flaglocation=</string>
+     <string name="keyfeature"> http://demo2.vbuy.in/api/Products/GetProductKeyFeatures/?id=</string>
+      <string name="alloffers"> http://demo2.vbuy.in/api/Products/GetAllOffers?lat=</string>
+      <string name="productidfilter">http://demo2.vbuy.in/api/Products/GetFiltersForProductCategory/?id=</string>
+      <string name="Topcategory">http://demo2.vbuy.in/api/Landing/GetTopCategories</string>
+    //newly add Store api
+    <string name="GetStoreInfo">http://demo2.vbuy.in/api/Stores/GetStoreInfo/</string>
+    <string name="GetStoreProducts">http://demo2.vbuy.in/api/Stores/GetStoreProducts?selectedBranchId=</string>
+    <string name="GetStoresProductFilter">http://demo2.vbuy.in/api/Stores/GetStoresProductFilter?productId=</string>
+    <string  name="AddShoppingCartItem">http://demo2.vbuy.in/api/Cart/AddShoppingCartItem/</string>
+    <string name="getmydetails">http://demo2.vbuy.in/api/Login/GetMyDetails?username=</string>
+    </resources>

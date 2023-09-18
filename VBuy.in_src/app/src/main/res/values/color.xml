@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="WHITE">#ffffff</color>
+    <color name="green">#006600</color>
+    <color name="Rcolor">#3B5998</color>
+     <color name="black">#000000</color>
+     <color name="red">#FF0000</color>
+      <color name="sample">#bcbdc2</color>
+      <color name="headtext">#fff</color>
+      <color name="gray_description">#F2F2F2</color>
+    <color name="head">#6a2a05</color>
+    <color name="header_color">#D00000</color>
+     <color name="list_divider">#b59a6d</color>
+     <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="radio_onclick">#2081f7</color>
+	<color name="menu_item">#fff2fee5</color>
+	<color name="customtitle">#000</color>
+</resources>

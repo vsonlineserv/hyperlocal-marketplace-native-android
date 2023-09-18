@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+    
+   <include layout="@layout/toolbar" />
+
+
+
+   
+   
+   
+   
+
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e5e5e5"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="#e5e5e5"
+        android:weightSum="5" >
+
+        <LinearLayout
+            android:id="@+id/filterlay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" 
+            
+            android:layout_weight="2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:background="@drawable/filter_sort_button">
+
+            <TextView
+                android:id="@+id/filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView1"
+                android:layout_centerHorizontal="true"
+                android:text="Filter"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:layout_toLeftOf="@+id/filter"
+               
+                android:gravity="center"
+                android:src="@drawable/filter" />
+                
+            </RelativeLayout>
+           
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sort_bylay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" 
+            android:layout_weight="2">
+            
+		<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:background="@drawable/filter_sort_button">
+
+             
+
+             <ImageView
+                 android:id="@+id/imageView2"
+                 android:layout_width="20dp"
+                 android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                 android:layout_marginRight="15dp"
+                 android:layout_toLeftOf="@+id/sort_ans"
+                 android:src="@drawable/sort" />
+
+             <TextView
+                 android:id="@+id/sort_by"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_toRightOf="@+id/imageView2"
+                 android:paddingRight="10dp"
+                 android:layout_centerVertical="true"
+                 android:text="Sort By"
+                 android:textSize="18sp"
+                 android:textColor="#000000"
+                 android:textStyle="bold" />
+             
+             <TextView
+                 android:id="@+id/sort_ans"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/sort_by"
+                 android:layout_alignParentBottom="true"
+                 android:layout_centerHorizontal="true"
+                 android:text="huihuiuyi"  
+                 android:textStyle="bold"
+                 android:textColor="#000000"
+                 android:paddingBottom="2dp"
+                
+                 android:textSize="12sp" />
+
+           </RelativeLayout>
+        </LinearLayout>
+        
+        
+        
+        
+        <LinearLayout
+            android:id="@+id/imagelay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" 
+            
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:background="@drawable/filter_sort_button">
+
+                <ImageView
+                    android:id="@+id/grid"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/gridview"
+                    android:visibility="invisible" />
+                <ImageView
+        android:id="@+id/listsmall"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/listview" 
+        android:visibility="invisible"/>
+                
+                <ImageView
+        android:id="@+id/list"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/partview"
+        android:visibility="visible" />
+                
+                
+                
+                
+            </RelativeLayout>
+           
+        </LinearLayout>
+        
+        
+        
+        
+        
+        
+        
+        
+
+     </LinearLayout>
+
+<RelativeLayout
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+   
+    android:background="#e5e5e5" >
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        style="@style/CustomSeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="1dp"
+        android:visibility="invisible"
+        android:layout_toLeftOf="@+id/km"
+        android:focusable="true"
+        android:max="24"
+        android:progress="50" />
+    
+    <TextView
+        android:id="@+id/km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/seekBar1"      
+        android:text="Search within 25 Kms"
+        android:layout_marginTop="5dp"
+        android:paddingRight="5dp"
+        android:visibility="invisible"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/categoryname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/km"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"     
+        android:text="TextView"
+        android:textColor="#0000FF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    
+    
+    
+        
+        
+    
+        
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/listView1"
+        android:layout_weight="1.09"
+        android:drawSelectorOnTop="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="2"
+        android:paddingTop="10dp"
+        
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="none"
+        android:textAlignment="center"
+        
+        android:visibility="invisible" >
+    </GridView>
+    
+    
+   
+
+        
+        
+        
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/categoryname"
+        android:layout_weight="1.09"
+        android:drawSelectorOnTop="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:listSelector="@android:color/transparent"
+        android:paddingTop="10dp"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="none"
+        android:textAlignment="center"
+        android:divider="#e5e5e5"
+         android:dividerHeight="10dp"
+         android:paddingBottom="4dp"
+        android:visibility="invisible" >
+    </ListView>
+    
+   
+    
+    
+<ListView
+        android:id="@+id/listView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/categoryname"
+        android:layout_weight="1.09"
+        android:drawSelectorOnTop="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:listSelector="@android:color/transparent"
+        android:paddingTop="10dp"
+        android:divider="#e5e5e5"
+        android:dividerHeight="10dp"
+         android:paddingBottom="4dp"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="none"
+        android:textAlignment="center"
+        android:visibility="invisible" >
+    </ListView>
+    
+
+
+    
+
+    
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/loadmore"
+        style="?android:attr/android:progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    
+
+</RelativeLayout>
+
+</LinearLayout>
+
+
+
+
+</LinearLayout>

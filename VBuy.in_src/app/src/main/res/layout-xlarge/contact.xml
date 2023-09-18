@@ -1,0 +1,307 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/WHITE" >
+    
+    
+  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+
+    <include layout="@layout/toolbar" />
+
+
+
+
+
+
+<RelativeLayout 
+    
+    android:id="@+id/contact_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/WHITE"
+    tools:ignore="ContentDescription" >
+<ScrollView
+     android:id="@+id/scrollView1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentTop="true"
+     android:layout_centerHorizontal="true"
+     android:scrollbars="none" >
+
+    <RelativeLayout 
+    android:id="@+id/contact_layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:ignore="ContentDescription" >
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="40dp"
+        android:text="Mobile No"
+        android:textSize="22dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="70dp"
+        android:text="E-mail id"
+        android:textSize="22dp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/mobile_no"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/contact_name"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/edittext_border"
+            android:inputType="number"
+        android:ems="10"
+        android:singleLine="true"
+        android:hint="  Mobile Number"
+        android:layout_marginRight="10dp"
+        android:imeOptions="actionNext"
+        android:textColor="#000000"
+        android:textSize="22dp"
+        android:textCursorDrawable="@null"  />
+    <EditText
+        android:id="@+id/email_id"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/mobile_no"
+        android:layout_alignParentRight="true"
+       
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:singleLine="true"
+        android:hint="  Email"
+        android:layout_marginRight="10dp"
+        android:textColor="#000000"
+        android:textCursorDrawable="@null" 
+        android:textSize="22dp"
+        android:imeOptions="actionNext" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/contact_name"
+        android:layout_alignBottom="@+id/contact_name"
+        android:layout_alignParentLeft="true"
+        android:text="Name"
+        android:layout_marginLeft="20dp"
+        android:textSize="22dp"
+        android:textColor="#000000" />
+
+    
+
+    <TextView
+        android:id="@+id/message_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/message"
+        android:layout_alignLeft="@+id/textView3"
+        android:text="Message"
+        android:textSize="22dp"
+        android:textColor="#000000" />
+<EditText
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/email_id"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/email_id"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:layout_marginRight="10dp"
+        android:imeOptions="actionDone"
+        android:focusable="true"
+        android:textColor="#000000"
+        android:textCursorDrawable="@null"
+        android:textSize="22dp" 
+        android:hint="  Contact Store and Get assured response on lower price and also stock availability." >
+
+    </EditText>
+
+    
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Contact :"
+        android:textColor="#0404B4"
+        android:textSize="26dp"
+        android:textStyle="bold" 
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/branchname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/textView4"
+        android:text="Text"
+        android:textColor="#0404B4"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/contact_image"
+        android:layout_marginTop="80dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:background="@drawable/edittext_border"
+        android:singleLine="true"
+        android:ems="10"
+        android:hint="  Name"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#000000"
+        android:imeOptions="actionNext"
+        android:textSize="22dp"
+        android:textCursorDrawable="@null"  >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:id="@+id/contact_image"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/branchname"
+        android:layout_centerHorizontal="true"
+       android:paddingTop="5dp"
+       android:paddingBottom="5dp"
+       android:layout_marginTop="10dp"
+        android:src="@drawable/nw" />
+
+    <TextView
+        android:id="@+id/contact_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/contact_name"
+        android:layout_below="@+id/contact_image"
+       
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="22dp"
+        android:text=""
+        android:textColor="#006600"
+        android:textStyle="bold" />
+<!--TextViewrtggggko;o;fuahnao;egkvnlanjkdfvpgo ijhnklanananananananananskbrfvjnwa;go cvnsxdbvfkmdsbgvfgesanotnh-->
+ <ImageView
+     android:id="@+id/imageView1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignBottom="@+id/contact_send"
+     android:layout_marginBottom="16dp"
+     android:layout_toRightOf="@+id/textView1" />
+
+ <Button
+     android:id="@+id/contact_send"
+     android:layout_width="200dp"
+     android:layout_height="80dp"
+     android:layout_alignLeft="@+id/message"
+     android:layout_below="@+id/message"
+     android:layout_marginTop="17dp"
+     android:background="@drawable/button_style"
+     android:onClick="Sendmail"
+     android:shadowRadius="5"
+     android:text="Send"
+     android:textColor="#FCFFED"
+     android:textSize="24sp"
+     android:textStyle="bold" />
+
+ <Button
+     android:id="@+id/contact_cancel"
+     android:layout_width="200dp"
+     android:layout_height="80dp"
+     android:layout_alignBaseline="@+id/contact_send"
+     android:layout_alignBottom="@+id/contact_send"
+    android:layout_alignRight="@+id/message"
+     android:background="@drawable/button_style"
+     android:onClick="closecontactform"
+     android:shadowRadius="5"
+     android:text="Cancel"
+     android:textColor="#FCFFED"
+     android:textSize="24sp"
+     android:textStyle="bold" />
+ 
+     </RelativeLayout>
+ </ScrollView>
+
+<TextView
+    android:id="@+id/textView5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/scrollView1"
+    android:layout_marginLeft="25dp"
+    android:textColor="#000000"
+    android:textSize="22sp"
+    android:layout_marginTop="25dp"
+    android:textStyle="bold"
+    android:text="Share your mobile, email info to get lowest quote and stock availability." />
+
+<TextView
+    android:id="@+id/textView6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/textView5"
+    android:layout_below="@+id/textView5"
+    android:layout_marginLeft="18dp"
+    android:layout_marginTop="15dp"
+    android:textColor="#000000"
+    android:textSize="20sp"
+    android:paddingRight="5dp"
+    android:paddingBottom="10dp"
+    android:text=" &#8226;  You will shortly receive an SMS/Email from VBuy.in. about the in-store availability and lowest price of the product.\n &#8226;  Your contact information will not be shared to any other store.\n &#8226;  We do not sell or share your contact information to any third party." />
+
+</RelativeLayout>
+
+
+
+
+</LinearLayout>
+    
+    
+    
+    
+    
+    
+    
+
+</ScrollView>

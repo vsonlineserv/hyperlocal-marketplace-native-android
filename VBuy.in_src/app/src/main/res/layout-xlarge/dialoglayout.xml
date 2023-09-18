@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/WHITE"
+    android:orientation="vertical" >
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp" >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="14dp"
+        android:src="@drawable/location" />
+
+    <ImageView
+        android:id="@+id/clear2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageView2"
+        android:visibility="invisible"
+        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/clear2"
+        android:layout_toRightOf="@+id/imageView2"
+        android:background="@drawable/search_border"
+        android:popupBackground="#fff"
+        android:ems="10"
+        android:textColor="#000000"
+        android:textCursorDrawable="@null" 
+        android:hint="Search Your Near By Area Here"
+        android:singleLine="true"
+        android:textSize="24sp" />
+         
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="90dp" >
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_alignParentLeft="true"
+                android:background="#000000" />
+
+           
+
+           
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/clear1"
+                android:layout_toRightOf="@+id/imageView1"
+                android:background="@drawable/search_border"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:popupBackground="#fff"
+      		   android:textColor="#000000"
+               android:textCursorDrawable="@null" 
+                android:hint="Search Your Product Here"
+                android:singleLine="true"
+                android:imeOptions="actionSearch"
+                android:textSize="24sp">
+                <requestFocus />
+           </AutoCompleteTextView>
+            
+             
+
+            <ImageView
+                android:id="@+id/clear1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"
+                android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:src="@android:drawable/ic_search_category_default" />
+
+        </RelativeLayout>
+         
+    </LinearLayout>
+<View
+                android:id="@+id/view2"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/go"
+                android:background="#000000" />
+</LinearLayout>

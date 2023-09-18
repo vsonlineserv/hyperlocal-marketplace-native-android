@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+    
+   <include layout="@layout/toolbar" />
+
+
+
+
+
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e5e5e5" >
+    
+    
+    <ImageView
+        android:id="@+id/noconnection"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:src="@drawable/noconnection" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:layout_centerVertical="true" />
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="invisible"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:visibility="gone"
+            android:layout_marginTop="86dp"
+            android:text="NO OFFERS" />
+        
+    </RelativeLayout>
+    
+    
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:textColor="#0000FF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+       
+        android:gravity="center"
+        android:visibility="visible"
+        android:background="@drawable/bck3"
+        android:layout_gravity="center"
+        android:text="Top Offers" />
+    
+    
+    
+<LinearLayout 
+    android:id="@+id/top_offers"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="invisible"
+    android:background="#e5e5e5"
+    android:orientation="vertical" >
+
+   
+<ExpandableListView
+        android:id="@+id/expandablelistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:groupIndicator="@android:color/transparent" />
+</LinearLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>

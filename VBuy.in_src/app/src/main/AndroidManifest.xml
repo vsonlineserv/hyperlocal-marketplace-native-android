@@ -1,0 +1,189 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.vbuy.client"
+    android:versionCode="6"
+    android:versionName="2.0.4" android:installLocation="auto" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+     <permission
+    	android:name="in.vbuy.client.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="in.vbuy.client.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+        <uses-permission android:name="android.permission.WAKE_LOCK" />
+    
+
+       <permission
+        android:name="in.vbuy.client.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission
+        android:name="in.vbuy.client.permission.C2D_MESSAGE" />
+
+    
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+         <uses-feature
+    	android:glEsVersion="0x00020000"
+        android:required="true"/>
+         
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+   
+    <application
+        android:name="in.vbuy.client.UILApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="in.vbuy.client.SplashscreenActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        
+         <activity
+            android:name="in.vbuy.client.CategoryProductActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            
+             
+            </activity>
+         <activity
+            android:name="in.vbuy.client.SubcategoryProductActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"/>
+         <activity
+            android:name="in.vbuy.client.ProductlistActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"/>
+          <activity
+            android:name="in.vbuy.client.SellerListActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"/>
+           <activity
+            android:name="in.vbuy.client.galleryView"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"/>
+            <activity
+            android:name="in.vbuy.client.FilterPrice"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+             <activity
+            android:name="in.vbuy.client.SearchActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+             <activity
+            android:name="in.vbuy.client.ContactSeller"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"/>
+             <activity
+            android:name="in.vbuy.client.MapActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"/>
+      		 <activity
+            android:name="in.vbuy.client.RateActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"/>
+              <activity
+            android:name="in.vbuy.client.NotificationActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"/>
+               <activity
+            android:name="in.vbuy.client.ProductDescription"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"/>
+               <activity
+            android:name="in.vbuy.client.OffersActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"/>
+               <activity
+            android:name="in.vbuy.client.FilterProductActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"/>
+               <activity
+            android:name="in.vbuy.client.RetailerMain"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"/>
+               <activity
+            android:name="in.vbuy.client.Signup_Login"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"/>
+                <activity
+            android:name="in.vbuy.client.AddActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"/>
+                 <activity
+            android:name="in.vbuy.client.DisplayActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"/>
+                  <activity
+            android:name="in.vbuy.client.ShopCartActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"/>
+                  <activity
+            android:name="in.vbuy.client.TrackOrderActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"/>
+                  <activity
+            android:name="in.vbuy.client.OrderDetailsActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"/>
+                   <activity
+            android:name="in.vbuy.client.PaymentOptionActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"/>
+                   <activity
+            android:name="in.vbuy.client.confirmPageActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"/>
+                    <activity
+            android:name="in.vbuy.client.PayuActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"/>
+                    <activity
+            android:name="in.vbuy.client.WishListPage"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"/>
+               
+             <meta-data android:name="com.google.android.gms.version"
+                 android:value="@integer/google_play_services_version"/>
+         <meta-data
+                android:name="com.google.android.maps.v2.API_KEY"
+                android:value="AIzaSyC4R1SF6hG36kC1Td_k4gsdYOVGCISiXuc"/>
+             <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+               
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="in.vbuy.client" />
+            </intent-filter>
+        </receiver>
+
+       
+        <service android:name="in.vbuy.client.GCMIntentService" />
+             
+    </application>
+
+</manifest>

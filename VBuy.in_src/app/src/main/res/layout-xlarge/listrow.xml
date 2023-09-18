@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="3dp"
+   android:paddingTop="5dp"
+    android:background="@drawable/grid_border"
+    >
+
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:orientation="horizontal" >
+        <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="2">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" >
+                 <ProgressBar
+        android:id="@+id/loadingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"/>
+                 <ImageView
+        android:id="@+id/list_image"
+        android:layout_width="150dp"
+        android:layout_height="180dp" />
+
+            </FrameLayout>
+
+       
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp" >
+<TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:text="Name"
+        android:textColor="#006600"
+        android:textSize="22sp" />
+
+        </TableRow>
+
+       
+
+        <TableRow
+            android:id="@+id/tableRow15"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" 
+            android:layout_marginTop="30dp" >
+            
+ <TextView
+        android:id="@+id/from_$"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price   :"
+        android:textSize="22sp"
+        android:textColor="#000000" />
+<TextView
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/from_$"
+        android:layout_alignBottom="@+id/from_$"
+        android:layout_toRightOf="@+id/from_$"
+        android:text=" &#x20B9;"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+        </TableRow>
+        
+        
+        
+         <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" 
+            android:layout_marginTop="20dp">
+<TextView
+        android:id="@+id/storecount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="Stores :"
+        android:textColor="#000" />
+<TextView
+        android:id="@+id/store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No.of Stores"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000" />
+        </TableRow>
+         
+
+    </LinearLayout>
+    </LinearLayout>
+
+    
+
+    <TextView
+        android:id="@+id/productid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_alignParentRight="true"
+        android:text="ProductId"
+        android:textColor="#0000ff"
+        android:visibility="invisible" />
+
+    
+    
+</LinearLayout>

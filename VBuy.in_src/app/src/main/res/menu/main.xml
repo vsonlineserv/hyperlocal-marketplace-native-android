@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    
+    
+
+    <item
+        android:id="@+id/badge"
+        app:actionLayout="@layout/badge_layout"
+        android:title="Badges"
+        android:icon="@drawable/smiley"  
+        app:showAsAction="always">
+    </item>
+   
+    
+    
+</menu>

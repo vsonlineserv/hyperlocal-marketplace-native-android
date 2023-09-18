@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:fitsSystemWindows="true">
+
+
+    <include layout="@layout/toolbar" />
+
+
+
+
+
+
+<ScrollView 
+    android:id="@+id/scrollView1"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentOptionActivity" 
+    android:scrollbars="none" >
+    
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+<RelativeLayout
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="1dp" 
+    android:background="#fff">
+    
+     <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:background="#fff"
+            android:paddingTop="25dp"
+            android:paddingBottom="15dp"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/addcart" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CART"
+                android:paddingLeft="5dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+         <LinearLayout
+            android:id="@+id/LinearLayout3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" >
+            
+            <ImageView
+                android:id="@+id/imageView56"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                
+                android:src="@drawable/addcart" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        		android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+        		android:textStyle="bold"  
+        		android:textColor="#000"
+                android:text="SHIPPING" />
+
+        </LinearLayout>
+         <LinearLayout
+            android:id="@+id/LinearLayout4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+           
+            android:layout_height="30dp" >
+            <TextView
+        android:id="@+id/second"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/buy_white"
+        android:gravity="center"
+        android:text="3" 
+        
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        android:textSize="18sp"
+       android:layout_marginTop="2dp"
+        android:paddingLeft="5dp"
+        android:textStyle="bold"  
+        android:textColor="#000"
+                android:text="PAYMENT" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+     <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:background="#8DB3E1"
+         android:layout_below="@+id/LinearLayout1"
+         />
+
+   				 
+
+   				 <TextView
+   				     android:id="@+id/textView4"
+   				     android:layout_width="wrap_content"
+   				     android:layout_height="wrap_content"
+   				     android:layout_alignParentLeft="true"
+   				     android:layout_below="@+id/view1"
+   				     android:layout_marginLeft="15dp"
+   				     android:textColor="#000000"
+   				     android:textSize="18dp"
+   				     android:layout_marginTop="20dp"
+   				     android:paddingBottom="5dp"
+   				     android:text="Total Amount   : ₹" />
+
+   				 <TextView
+   				     android:id="@+id/total"
+   				     android:layout_width="wrap_content"
+   				     android:layout_height="wrap_content"
+   				     android:textColor="#000000"
+   				     android:layout_alignBaseline="@+id/textView4"
+   				     android:layout_alignBottom="@+id/textView4"
+   				     android:layout_toRightOf="@+id/textView4"
+   				     android:textStyle="bold"
+   				     android:textSize="18dp"
+   				     android:text="TextView" />
+   				 
+   				  <TextView
+   				     android:id="@+id/textView80"
+   				     android:layout_width="wrap_content"
+   				     android:layout_height="wrap_content"
+   				     android:layout_alignParentLeft="true"
+   				     android:layout_below="@+id/textView4"
+   				    android:layout_marginLeft="15dp"
+   				     android:textColor="#000000"
+   				     android:layout_marginTop="10dp"
+   				     android:textSize="18dp"
+   				     android:paddingBottom="5dp"
+   				     android:text="Shipping Amount  : ₹" />
+   				  <TextView
+   				     android:id="@+id/textView81"
+   				     android:layout_width="wrap_content"
+   				     android:layout_height="wrap_content"
+   				     android:layout_alignParentLeft="true"
+   				     android:layout_below="@+id/textView80"
+   				     android:layout_marginLeft="15dp"
+   				     android:textColor="#000000"
+   				     android:layout_marginTop="10dp"
+   				     android:paddingBottom="5dp"
+   				     android:textSize="18dp"
+   				     android:text="Discount  : ₹" />
+   				 
+   				 <TextView
+   				     android:id="@+id/textView82"
+   				     android:layout_width="wrap_content"
+   				     android:layout_height="wrap_content"
+   				     android:layout_alignParentLeft="true"
+   				     android:layout_below="@+id/textView81"
+   				    android:layout_marginLeft="15dp"
+   				     android:textColor="#000000"
+   				     android:layout_marginTop="10dp"
+   				     android:paddingBottom="5dp"
+   				     android:textSize="18dp"
+   				     android:text="Net Payable   : ₹" />
+   	
+   <TextView
+   				     android:id="@+id/delivery"
+   				     android:layout_width="match_parent"
+   				     android:layout_height="60dp"
+   				     android:layout_alignParentLeft="true"
+   				     android:layout_below="@+id/coupon"
+   				     android:background="#e5e5e5"
+   				     android:paddingLeft="8dp"
+   				     android:paddingTop="15dp"
+   				     android:text="Delivery"
+   				     android:layout_marginTop="20dp"
+   				     android:textColor="#000000"
+   				     android:textSize="22sp"
+   				     android:textStyle="bold" />	
+   				     
+   <RadioGroup
+       android:id="@+id/rg"
+       android:layout_below="@+id/delivery"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="15dp"
+    android:orientation="vertical" >
+
+   <!-- <RadioButton
+        android:id="@+id/pickup"
+         android:layout_below="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:button="@drawable/custom_radio"
+        android:text="Pickup at Store" />-->
+
+    <RadioButton
+        android:id="@+id/doordeliver"
+        android:layout_below="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+         android:textSize="20dp"
+		android:buttonTint="@color/radio_onclick"
+        android:text="Door Delivery" />
+</RadioGroup>
+
+   <TextView
+       android:id="@+id/payopt"
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:background="#e5e5e5"
+       android:layout_below="@+id/textView14"
+       android:textColor="#000000"
+       android:paddingTop="15dp"
+       android:paddingLeft="8dp"
+       android:layout_marginTop="22dp"
+   	   android:textSize="20sp"
+   	   android:textStyle="bold"
+   	   android:text="Payment Options" />
+   
+   
+   <RadioGroup
+       android:id="@+id/rg1"
+       android:layout_below="@+id/payopt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="15dp"
+    android:orientation="vertical" >
+
+    <RadioButton
+        android:id="@+id/cashon"
+         android:layout_below="@+id/rg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+		android:buttonTint="@color/radio_onclick"
+        android:text="Cash on Delivery" />
+
+   <!-- <RadioButton
+        android:id="@+id/cardon"
+        android:layout_below="@+id/cashon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:textSize="20dp"
+       android:layout_marginTop="10dp"
+        android:button="@drawable/custom_radio"
+        android:text="Card on Delivery" />
+    <RadioButton
+        android:id="@+id/Cardwallet"
+        android:layout_below="@+id/cardon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:button="@drawable/custom_radio"
+        android:text="PayUMoney (NetBanking/Credit Card/Debit Card)" />-->
+</RadioGroup>
+<TextView
+       android:id="@+id/textView123"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="20dp"
+       android:layout_marginTop="20dp"
+       android:layout_below="@+id/rg1"
+       android:textColor="#006600"
+       android:paddingRight="5dp"
+       android:paddingBottom="3dp"
+       android:textSize="14dp"
+       android:text="Note:Cash Payments only." />
+   <Button
+       android:id="@+id/confirmorderbtn"
+       android:layout_width="250dp"
+       android:layout_height="50dp"
+       android:layout_below="@+id/textView123"
+       android:layout_centerHorizontal="true"
+       android:text="Confirm Order"
+       android:background="#0099FF"
+       android:layout_marginTop="20dp"
+        android:textColor="#fff"
+       android:textSize="18dp" />
+   
+   
+   <TextView
+       android:id="@+id/textView6"
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:paddingTop="15dp"
+       android:paddingLeft="8dp"
+       android:layout_marginTop="20dp"
+       android:textStyle="bold"
+       android:textColor="#000000"
+       android:background="#e5e5e5"
+       android:textSize="22dp"
+       android:layout_below="@+id/confirmorderbtn"
+       android:text="Shipping Address" />
+
+   <TextView
+       android:id="@+id/address"
+       android:layout_marginTop="15dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/textView4"
+       android:layout_below="@+id/textView6"
+       android:layout_marginLeft="10dp"
+       android:textSize="18dp"
+       android:textColor="#000000"
+       android:text="TextView" />
+
+   <TextView
+       android:id="@+id/near"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/address"
+       android:layout_below="@+id/address"
+        android:textSize="18dp"
+        android:layout_marginTop="5dp"
+       android:textColor="#000000"
+       android:text="TextView" />
+
+   <TextView
+       android:id="@+id/city"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/near"
+       android:layout_below="@+id/near"
+        android:textSize="18dp"
+         android:layout_marginTop="5dp"
+       android:textColor="#000000"
+       android:text="TextView" />
+
+   <TextView
+       android:id="@+id/state"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/city"
+       android:layout_below="@+id/city"
+        android:textSize="18dp"
+         android:layout_marginTop="5dp"
+       android:textColor="#000000"
+       android:text="TextView" />
+
+   <TextView
+       android:id="@+id/mobile"
+        android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/postal"
+       android:layout_below="@+id/postal"
+        android:textSize="18dp"
+       android:textColor="#000000"
+        android:layout_marginTop="5dp"
+       android:text="TextView"  />
+   
+   
+   <TextView
+       android:id="@+id/textView13"
+        android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:paddingTop="15dp"
+      android:paddingLeft="8dp"
+      android:textStyle="bold"
+      android:textSize="22dp"
+      android:textColor="#000000"
+      android:layout_marginTop="15dp"
+       android:background="#e5e5e5"
+       android:layout_below="@+id/mobile"
+       android:text="Orderd Item"  />
+   
+   
+   
+   <LinearLayout
+       android:id="@+id/relay"
+      android:layout_width="match_parent"
+       android:layout_height="match_parent" 
+       android:layout_below="@+id/textView13"
+       
+       android:background="#e5e5e5"
+       android:paddingLeft="10dp"
+       android:paddingRight="10dp"
+       
+       android:orientation="vertical" 
+       android:paddingBottom="3dp"
+       >
+   
+  
+   
+   <ListView
+       android:id="@+id/List"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+      android:divider="#e5e5e5"
+       android:dividerHeight="10dp"
+       android:layout_marginTop="5dp"
+       android:layout_alignParentBottom="true"
+        />
+   
+   </LinearLayout>
+
+   <TextView
+       android:id="@+id/textView14"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="20dp"
+       android:layout_marginTop="20dp"
+       android:layout_below="@+id/rg"
+       android:textColor="#006600"
+       android:paddingRight="5dp"
+       android:paddingBottom="3dp"
+       android:textSize="14dp"
+       android:text="Note: Certain Products have, delivery only available with in the store located city" />
+
+   
+
+   <TextView
+       android:id="@+id/postal"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/state"
+       android:layout_below="@+id/state"
+       android:layout_marginTop="5dp"
+       android:textSize="18dp"
+       android:textColor="#000000"
+       android:text="TextView" />
+
+   <TextView
+       android:id="@+id/shipping_amounts"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBaseline="@+id/textView80"
+       android:layout_alignBottom="@+id/textView80"
+       android:layout_toRightOf="@+id/textView80"
+   		android:textStyle="bold"
+   		android:textSize="18dp"
+   		android:textColor="#000000"
+       android:text="TextView" />
+
+   <TextView
+       android:id="@+id/Discount_amount"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+   		android:textStyle="bold"
+   		android:textColor="#000000"
+   		android:textSize="18dp"
+       android:layout_alignBaseline="@+id/textView81"
+       android:layout_alignBottom="@+id/textView81"
+       android:layout_toRightOf="@+id/textView81"
+       android:text="TextView" />
+
+   <TextView
+       android:id="@+id/net_amount"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBaseline="@+id/textView82"
+       android:layout_alignBottom="@+id/textView82"
+       android:layout_alignParentRight="true"
+       android:layout_toRightOf="@+id/textView82"
+       android:text="TextView"
+       android:textSize="18dp"
+       android:textColor="#000000"
+       android:textStyle="bold" />
+
+   <EditText
+       android:id="@+id/coupon"
+       android:layout_width="wrap_content"
+       android:layout_height="50dp"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/textView82"
+       android:layout_marginLeft="15dp"
+       android:layout_marginTop="15dp"
+       android:layout_toLeftOf="@+id/apply"
+       android:background="@drawable/edittext_border"
+       android:ems="10"
+       android:hint="Discount Coupon"
+       android:paddingBottom="5dp"
+       android:layout_marginRight="5dp"
+       android:textColor="#000000"
+       android:textCursorDrawable="@null"
+       android:textSize="18dp" >
+
+    </EditText>
+
+   <Button
+       android:id="@+id/apply"
+       android:layout_width="100dp"
+       android:layout_height="40dp"
+       android:layout_alignBaseline="@+id/coupon"
+       android:layout_alignBottom="@+id/coupon"
+       android:layout_alignParentRight="true"
+       android:background="#0099FF"
+       android:layout_marginRight="10dp"
+       android:text="Apply"
+       android:textColor="#fff"
+       android:textSize="18dp" />
+
+</RelativeLayout>
+    
+    </LinearLayout>
+ 
+
+</ScrollView>
+
+
+
+
+</LinearLayout>

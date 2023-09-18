@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+
+    <include layout="@layout/toolbar" />
+
+
+<RelativeLayout 
+    
+    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#848484" >
+
+<RelativeLayout
+    android:id="@+id/login_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="#fff" >
+
+    
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/username"
+        android:layout_alignRight="@+id/username"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="3dp"
+        android:ems="10"
+        android:hint="Password"
+         android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:background="@drawable/edittext_border"
+        android:drawableLeft="@drawable/password50"
+        android:drawablePadding="10dp"
+        android:password="true"
+        android:textColor="#3B5998"
+        android:textCursorDrawable="@null"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/edittext_border"
+        android:drawableLeft="@drawable/username50"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:textColor="#3B5998"
+        android:textCursorDrawable="@null"
+        android:singleLine="true"
+        android:textSize="18dp"
+        android:imeOptions="actionNext"
+        android:hint="User Name"
+       >
+
+        <requestFocus />
+        </EditText>
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/forgot"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#3B5998"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/btn_brdr"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Up" />
+
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/btn_brdr"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="Forgot Password"
+        android:textColor="#3B5998"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/login"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/btn_crnr"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:text="Login"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+</RelativeLayout>
+
+<ImageView
+    android:id="@+id/netsignal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"/>
+
+
+</RelativeLayout>
+
+
+</LinearLayout>

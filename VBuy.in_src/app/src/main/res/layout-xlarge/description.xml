@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:fitsSystemWindows="true">
+
+
+    <include layout="@layout/toolbar" />
+
+
+
+
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDescription" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="5dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_lv2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingTop="15dp"
+                android:paddingLeft="5dp"
+                android:text="Product Description"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="7dp"
+                android:paddingTop="2dp"
+                android:paddingLeft="5dp"
+                android:gravity="center_vertical"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingTop="15dp"
+                android:paddingLeft="5dp"
+                android:background="@drawable/border_lv2"
+                android:text="Product Specification"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            
+            
+            
+            
+            
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/border_lv"
+            android:orientation="vertical" >    
+
+            
+
+            <ListView
+                android:id="@+id/basic_desc"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/border_lv"
+                android:scrollbars="none"
+                >
+                
+           </ListView>
+           
+         </RelativeLayout>   
+            
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_lv"
+            android:orientation="vertical" >   
+        
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="2dp"
+                 android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                 android:paddingLeft="3dp"
+                 android:paddingTop="3dp"
+                android:background="#F2F2F2"
+                android:text="Detailed Specification"
+                android:textColor="#006600"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/desc"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="@null"
+                android:background="@drawable/border_lv" 
+                android:scrollbars="none">
+
+            </ListView>
+            
+         </RelativeLayout>   
+            
+            
+        </LinearLayout>
+
+    </ScrollView>
+
+    
+
+</LinearLayout>
+            
+       

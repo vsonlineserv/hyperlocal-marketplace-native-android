@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+
+            <ListView
+                android:id="@android:id/list"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+            </ListView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/seekBar1"
+            android:visibility="invisible"
+            android:text=""
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <in.vbuy.client.util.RangeSeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:visibility="invisible"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+             android:layout_marginTop="80dp" />
+
+        <TextView
+            android:id="@+id/max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/min"
+            android:layout_alignBottom="@+id/min"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="18dp"
+             android:layout_marginRight="10dp"
+            android:paddingRight="5dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

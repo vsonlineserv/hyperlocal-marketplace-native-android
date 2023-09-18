@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="48dp"
+    android:layout_height="fill_parent"
+    android:layout_gravity="right" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:src="@drawable/smiley"/>
+
+   <!-- <TextView
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="8dp"
+        android:text="" 
+        android:textSize="10sp"
+        android:textColor="#ffffff" />-->
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/carticon"
+        android:layout_alignTop="@id/carticon"
+        android:background="@drawable/buy_white"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="10"
+        android:textColor="#ffffffff"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

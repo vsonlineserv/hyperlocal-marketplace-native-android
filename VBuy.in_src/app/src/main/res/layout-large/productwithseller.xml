@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+
+    <include layout="@layout/toolbar" />
+
+
+
+
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WHITE">
+    
+     <TextView
+             android:id="@+id/hints"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="20sp"
+             android:textColor="#006600"
+             android:textStyle="bold"
+             android:layout_marginTop="10dp"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="5dp"
+             android:text="pp]oopp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:orientation="horizontal"
+            
+            android:weightSum="4" >
+        
+            
+           
+            
+            
+            
+            
+         <LinearLayout
+             android:id="@+id/lay2"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="2"
+              >
+             
+             
+                         <LinearLayout
+                 android:layout_width="match_parent"
+            	 android:layout_height="match_parent"
+           		 android:orientation="vertical"
+           		 android:layout_marginTop="10dp"
+           		 android:weightSum="6">
+           		 
+                 
+                 
+                 
+                 
+                 <LinearLayout
+                    android:layout_width="match_parent"
+             		android:layout_height="0dp"
+             		android:layout_weight="4"
+             		android:gravity="center" 
+             		 android:layout_marginLeft="10dp">
+
+             <ImageView
+                 android:id="@+id/imginactivity"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:src="@drawable/nw" />
+             
+             </LinearLayout>
+             
+            <LinearLayout
+                    android:layout_width="fill_parent"
+             		android:layout_height="0dp"
+             		android:paddingTop="10dp"
+             		android:layout_marginLeft="10dp"
+             		android:layout_weight="2"  >     
+                 
+                 
+                 <in.vbuy.client.util.HorizontalListView
+        android:id="@+id/Gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        
+        </in.vbuy.client.util.HorizontalListView>
+             
+          
+           </LinearLayout>   
+           
+            
+             </LinearLayout>
+             
+             
+         </LinearLayout>
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+
+<LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="wrap_content" 
+             android:layout_weight="2"
+             android:paddingLeft="10dp">
+         <TableLayout
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent" >
+
+             
+			 <TableRow
+                     android:id="@+id/tableRow10"
+                     android:layout_width="wrap_content"
+                     android:paddingTop="3dp"
+                     android:layout_height="wrap_content" >
+                 
+                 <LinearLayout
+                    android:layout_width="match_parent"
+             		android:layout_height="match_parent"
+             		android:orientation="horizontal" >
+                     <TextView
+             				android:layout_width="wrap_content"
+             				android:layout_height="wrap_content"
+             				android:textSize="18sp"
+             				android:textColor="#0404B4"
+             				android:textStyle="bold"
+             				android:text="Key Features :" />
+                     
+                    
+                     <TextView
+          					android:id="@+id/more"
+          					android:layout_width="wrap_content"
+      						android:layout_height="wrap_content"
+      					    android:text="More \u25BA"
+      					    android:layout_marginLeft="40dp"
+          					android:textColor="#006600"
+         				    android:textSize="22sp"
+          					android:textStyle="bold" />
+                     
+                     
+                     </LinearLayout>
+                     
+                     
+                 </TableRow>
+                 
+			 
+             <TableRow
+                 android:id="@+id/tableRow2"
+                 android:layout_width="wrap_content" 
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="5dp" >
+
+                 
+
+                     
+                     
+                         
+                         
+                         
+  <ScrollView
+    android:id="@+id/scrollView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+                         
+                         <LinearLayout
+                             android:layout_width="fill_parent"
+                             android:layout_height="match_parent" >
+                         
+                          <TextView
+                     android:id="@+id/keyfeature"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+            		 android:textSize="16sp"
+            		 android:textColor="#000000"
+                     android:text="" />
+                          
+                          
+                       </LinearLayout> 
+  
+ </ScrollView>                        
+                       
+                      
+
+                
+
+             </TableRow>
+
+            
+
+         </TableLayout>
+
+         
+        
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+<!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       
+
+    
+        
+    </LinearLayout> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+ <SeekBar
+     android:id="@+id/seekBar1"
+     style="@style/CustomSeekBar"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_marginTop="10dp"
+     android:layout_toLeftOf="@+id/km"
+     android:layout_weight="0.40"
+     android:focusable="true"
+     android:max="25"
+     android:progress="50" />
+
+        <TextView
+            android:id="@+id/km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:text=" "
+            android:textSize="18dp"
+            android:textColor="#000000" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+          <TextView
+        android:id="@+id/sort_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Store Name"
+        android:paddingLeft="3dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000033"  />
+
+          <ImageView
+              android:id="@+id/name_up"
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:layout_centerVertical="true"
+              android:layout_toRightOf="@+id/sort_name"
+              android:visibility="invisible"
+              android:src="@drawable/up" />
+          <ImageView
+              android:id="@+id/name_down"
+              android:layout_width="25dp"
+              android:layout_height="25dp"
+              android:layout_centerVertical="true"
+              android:layout_toRightOf="@+id/sort_name"
+              android:visibility="invisible"
+              android:src="@drawable/down" />
+
+          <ImageView
+              android:id="@+id/price_up"
+              android:layout_width="25dp"
+              android:layout_height="25dp"
+              android:layout_centerVertical="true"
+              android:layout_toRightOf="@+id/sort_price"
+              android:visibility="invisible"
+              android:src="@drawable/up" />
+          <ImageView
+              android:id="@+id/price_down"
+              android:layout_width="25dp"
+              android:layout_height="25dp"
+              android:layout_centerVertical="true"
+              android:layout_toRightOf="@+id/sort_price"
+              android:visibility="invisible"
+              android:src="@drawable/down" />
+
+          <TextView
+              android:id="@+id/sort_price"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:layout_centerVertical="true"
+              android:gravity="center"
+              android:visibility="invisible"
+              android:textSize="20dp"
+               android:textStyle="bold"
+              android:text="Selling Price"
+              android:textColor="#000033" />
+          <TextView
+              android:id="@+id/sort_price_down"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:layout_centerVertical="true"
+              android:visibility="visible"
+              android:layout_toLeftOf="@+id/price_down"
+              android:gravity="center"
+              android:text="Selling Price"
+              android:textSize="20dp"
+              android:textStyle="bold"
+              android:textColor="#000033" />
+
+          <TextView
+              android:id="@+id/textView3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" 
+              android:layout_toLeftOf="@+id/sort_direction"
+              android:layout_toRightOf="@+id/price_up"
+              android:textSize="20dp"
+              android:paddingLeft="40dp"
+              android:text="Buy"
+               android:textStyle="bold"
+              android:textColor="#000033" />
+
+          <ImageView
+              android:id="@+id/km_up"
+              android:layout_width="25dp"
+              android:layout_height="25dp"
+              android:layout_alignParentRight="true"
+              android:layout_alignTop="@+id/sort_price"
+              android:visibility="invisible"
+              android:src="@drawable/up" />
+          <ImageView
+              android:id="@+id/km_down"
+              android:layout_width="25dp"
+              android:layout_height="25dp"
+               android:layout_toRightOf="@+id/sort_direction_down"
+              android:layout_alignParentRight="true"
+              android:layout_alignTop="@+id/sort_price"
+              android:visibility="invisible"
+              android:src="@drawable/down" />
+
+          <TextView
+              android:id="@+id/sort_direction"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+               android:textStyle="bold"
+              android:layout_toLeftOf="@+id/km_up"
+              android:visibility="visible"
+              android:text="Direction"
+              android:textSize="20dp"
+              android:textColor="#000033" />
+          <TextView
+              android:id="@+id/sort_direction_down"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+             android:layout_toLeftOf="@+id/km_up"
+              android:textStyle="bold" 
+              android:text="Direction"
+              android:textSize="20dp"
+              android:visibility="invisible"
+              android:textColor="#000033" />
+          
+        
+    </RelativeLayout>
+
+  <View
+        android:id="@+id/View03"
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp"
+        android:background="#000066" />
+  
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       
+    </LinearLayout>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#e5e5e5"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+       
+        >
+
+        <TextView
+            android:id="@+id/errorpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Stores not available for this product in selected area and then go to Back Increase the KM radius"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+<ListView
+    android:id="@+id/shoplist"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="70dp"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:divider="#e5e5e5"
+    android:dividerHeight="10dp"   
+    android:focusable="true"
+    android:scrollbars="none" >
+    
+        </ListView>
+        <LinearLayout	
+			    android:orientation="vertical"
+        		android:gravity="bottom"
+			    android:layout_width="fill_parent"
+			    android:paddingBottom="70dp"
+			    android:layout_height="fill_parent">
+
+   
+
+	<!--<in.vbuy.client.SlidingPanel
+			android:id="@+id/popup_window" 
+    	    android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical"
+        	android:gravity="left"
+        	android:padding="1px"
+        	android:background="#ffffff">
+	
+		<LinearLayout	
+					    android:orientation="horizontal"
+					    android:layout_width="fill_parent"
+					    android:layout_height="fill_parent"
+					    android:background="@drawable/gradient_bar">
+			
+			<TextView	
+					android:id="@+id/site_name"
+			        android:layout_width="wrap_content" 
+			        android:layout_height="wrap_content"
+	        		android:textStyle="bold"
+	        		android:textSize="14sp"
+	        		android:text="Message"
+	        		android:layout_gravity="center"
+	        		android:layout_alignParentLeft="true"
+	        		android:textColor="#000000"
+	        		android:layout_weight="1"
+	        		android:layout_marginLeft="5px"/>
+	        		
+			<ImageButton android:id="@+id/hide_popup_button"
+			        android:layout_width="30dp" 
+			        android:layout_height="30dp"
+	    			android:layout_alignParentRight="true"
+			        android:layout_centerInParent="true"
+	    			android:layout_margin="2px"
+	    			android:layout_gravity="center"
+			        android:background="@drawable/close"/>
+        
+		</LinearLayout>
+        
+	    <TextView	android:id="@+id/site_description"
+			        android:layout_width="wrap_content" 
+			        android:layout_height="wrap_content"
+					android:textColor="#000000"
+					android:textStyle="italic"
+					android:background="#e5e5e5"
+					android:textSize="12sp"
+					android:text=""
+	        		android:layout_margin="5px"/>
+        
+	</in.vbuy.client.SlidingPanel>
+-->
+</LinearLayout>
+ <RelativeLayout
+        android:id="@+id/lay_buy"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="2dp"
+        android:visibility="invisible"
+        android:paddingBottom="5dp"
+        android:background="@drawable/filter_sort_button" >
+
+<TextView
+    android:id="@+id/shop"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/price"
+    android:layout_alignBottom="@+id/price"
+    android:layout_toLeftOf="@+id/buy"
+    android:layout_toRightOf="@+id/price"
+    android:gravity="center"
+    android:text="Store Name"
+    android:textColor="#000000"
+    android:textSize="18dp"
+    android:paddingBottom="5dp"
+    android:textStyle="bold" />
+
+<Button
+    android:id="@+id/buy"
+    android:layout_width="130dp"
+    android:layout_height="80dp"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    
+    android:background="@drawable/button_style"
+    android:text="BUY"
+    android:textColor="#ffffff"
+    android:textSize="20sp"
+    android:textStyle="bold" />
+
+<!--
+<Button
+    android:id="@+id/availability"
+    android:layout_width="130dp"
+    android:layout_height="80dp"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    
+    android:background="@drawable/button_style"
+    android:text="CONTACT"
+    android:textColor="#ffffff"
+    android:textSize="20sp"
+    android:visibility="visible"
+    android:textStyle="bold" />
+
+-->
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_centerVertical="true"
+    android:textSize="18sp"
+    android:textColor="#000000"
+    android:layout_marginLeft="5dp"
+    android:textStyle="bold" 
+    android:text="Price :" />
+
+<TextView
+    android:id="@+id/price"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/textView1"
+    android:layout_toRightOf="@+id/textView1"
+    android:text="Price"
+    android:textColor="#006600"
+    android:layout_marginLeft="2dp"
+    android:textSize="20sp"
+    android:textStyle="bold" />
+        
+
+
+
+    <!-- <ImageButton
+    		android:id="@+id/show_popup_button"
+	        android:layout_width="20dp" 
+	        android:layout_height="20dp"
+	        android:layout_gravity="left"
+			android:background="@drawable/open"
+			 />-->
+    
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+   
+
+    
+    </LinearLayout>
+    
+
+</LinearLayout>
